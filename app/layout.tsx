@@ -10,14 +10,29 @@ const roboto = Roboto({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Harivansh Thakur - Full Stack Developer",
   description:
-    "Harivansh's portfolio showcasing projects and skills as a full stack developer",
+    "portfolio showcasing projects and skills as a full stack developer",
   keywords: [
     "Harivansh Thakur",
     "Full Stack Developer",
+    "Backend Developer",
+    "Python Developer",
     "Portfolio",
     "Projects",
     "Skills",
   ],
+  openGraph: {
+    title: "Harivansh Thakur - Full Stack Developer",
+    description:
+      "portfolio showcasing projects and skills as a full stack developer",
+    images: [
+      {
+        url: process.env.NEXT_PUBLIC_PREVIEW || "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Harivansh Thakur - Full Stack Developer",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
